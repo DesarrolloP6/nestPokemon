@@ -6,3 +6,7 @@ Creamos una pagina estatica y la mostramos
                                                 ServeStaticModule.forRoot({
                                                     rootPath: join(__dirname,’..’,’public’),
                                                 })
+# Clase 71
+En esta clase agregamos un prefix a la api en el main:
+  //app.setGlobalPrefix('api/v2')
+        
