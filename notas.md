@@ -13,3 +13,7 @@ En esta clase agregamos un prefix a la api en el main:
 Configuramos el docker desktop con mongoDB
 Configuramos un archivo (docker-compose.yml) para poder crear la instancia de la base de datos de mongo
 Para crear la instancia de mongo db se utiliza el comando => docker-compose up -d
+# Clase 73
+Editamos el archivo de Readme.md para mostrar todos los pasos que hay que hacer para levantar el proyecto
+esto nos sirve ya sea para que un tercero pueda levantar el proyecto y para que si lo necesito hacer yo
+dentro de un tiempo se me sea mas facil.
