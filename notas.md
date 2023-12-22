@@ -17,3 +17,6 @@ Para crear la instancia de mongo db se utiliza el comando => docker-compose up -
 Editamos el archivo de Readme.md para mostrar todos los pasos que hay que hacer para levantar el proyecto
 esto nos sirve ya sea para que un tercero pueda levantar el proyecto y para que si lo necesito hacer yo
 dentro de un tiempo se me sea mas facil.
+# Clase 74 - 75 
+Configuracion de conexion con mongoDB
+--DTO de pokemon
