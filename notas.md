@@ -25,3 +25,5 @@ Creación y validacion del post
   validacion con pipe y decoradores en el DTO
 # Clase 77
 Creacion de pokemon en base de datos 
+# Clase 78
+Validacion de errores en la creación de pokemons
