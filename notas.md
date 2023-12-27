@@ -23,3 +23,5 @@ Configuracion de conexion con mongoDB
 # Clase 76
 Creación y validacion del post
   validacion con pipe y decoradores en el DTO
+# Clase 77
+Creacion de pokemon en base de datos 
