@@ -20,3 +20,6 @@ dentro de un tiempo se me sea mas facil.
 # Clase 74 - 75 
 Configuracion de conexion con mongoDB
 --DTO de pokemon
+# Clase 76
+Creación y validacion del post
+  validacion con pipe y decoradores en el DTO
