@@ -27,3 +27,5 @@ Creación y validacion del post
 Creacion de pokemon en base de datos 
 # Clase 78
 Validacion de errores en la creación de pokemons
+# Clase 79
+Buscar pokemon por idMongo, numero o por nombre
