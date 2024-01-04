@@ -31,3 +31,5 @@ Validacion de errores en la creación de pokemons
 Buscar pokemon por idMongo, numero o por nombre
 # Clase 80 - 81
 Actualizar datos de pokemon y validacion de keys y problemas
+# Clase 82
+Eliminacion de pokemon 
