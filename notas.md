@@ -35,4 +35,6 @@ Actualizar datos de pokemon y validacion de keys y problemas
 Eliminacion de pokemon 
 # Clase 83
 Creacion de pipe personalizado (Mongo ID)
+# Clase 84
+Diferentes formas de eliminar un registro en base de datos
 

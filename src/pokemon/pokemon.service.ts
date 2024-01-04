@@ -72,11 +72,22 @@ export class PokemonService {
   }
 
   async remove(id: string) {
-    
+    // Primera Opcion => Buscamos el pokemon y luego lo eliminamos
+    // *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
     // const pokemon = await this.findOne(id)
     // await pokemon.deleteOne()
-    const result = await this.pokemonModel.findByIdAndDelete(id)
-    return  result 
+    // *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    // Segunda opcion => Buscamos y eliminamos el pokemon (No verifica si existe)
+    // *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    // const result = await this.pokemonModel.findByIdAndDelete(id)
+    // *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    // Tercera opcion => Eliminamos el pokemon
+    const {deletedCount} = await this.pokemonModel.deleteOne({_id:id})
+
+    if (deletedCount === 0) {
+      throw new BadRequestException(`Pokemon with Id (${id}) not found`)
+    }
+    return 
   }
 
   private handleException(error:any){
