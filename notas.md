@@ -33,3 +33,6 @@ Buscar pokemon por idMongo, numero o por nombre
 Actualizar datos de pokemon y validacion de keys y problemas
 # Clase 82
 Eliminacion de pokemon 
+# Clase 83
+Creacion de pipe personalizado (Mongo ID)
+
