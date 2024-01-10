@@ -37,4 +37,7 @@ Eliminacion de pokemon
 Creacion de pipe personalizado (Mongo ID)
 # Clase 84
 Diferentes formas de eliminar un registro en base de datos
-
+# Clase 90
+Preparar modulo de seed (Para poder tener datos iniciales)
+# Clase 91-92
+Obtener los datos de una api de terceros con axios
