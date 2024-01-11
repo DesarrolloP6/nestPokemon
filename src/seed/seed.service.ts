@@ -17,14 +17,38 @@ export class SeedService {
 
   async executeSeed() {
 
+    await this.pokemonModel.deleteMany({}) //DELETE POKEMON
 
+    const {data } = await axios.get<PokemonResponse>('https://pokeapi.co/api/v2/pokemon?limit=650')
+ //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    //Insertar pokemon por listado obtenido (INSERT INTO SELECT)
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    const pokemonToInsert:{name:string, no:number}[] = []
+    data.results.forEach(({name,url})=>{
+      const segments = url.split('/')
+      const no = +segments[segments.length - 2]
 
-    const {data } = await axios.get<PokemonResponse>('https://pokeapi.co/api/v2/pokemon?limit=10')
-
-    data.results.map(async ({name,url})=>{
-      await this.pokemonModel.create({name, no: +url.split('/')[url.split('/').length - 2]})      
+      pokemonToInsert.push({name, no})
     })
+    await this.pokemonModel.insertMany(pokemonToInsert)
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    //Insertar pokemon por listado obtenido 
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    // const insertPromiseArray= []
+    // data.results.forEach(({name,url})=>{
+    //   insertPromiseArray.push(
+    //     this.pokemonModel.create({name, no: +url.split('/')[url.split('/').length - 2]})
+    //   )      
+    // })
+    // await Promise.all(insertPromiseArray)
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    //Insertar pokemon uno por uno del listado obtenido 
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    // data.results.map(async ({name,url})=>{
+    //   await this.pokemonModel.create({name, no: +url.split('/')[url.split('/').length - 2]})
 
+    // })
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
     return 'Seed Excecuted'
   }

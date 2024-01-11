@@ -41,5 +41,5 @@ Diferentes formas de eliminar un registro en base de datos
 Preparar modulo de seed (Para poder tener datos iniciales)
 # Clase 91-92
 Obtener los datos de una api de terceros con axios
-# Clase 93-95
+# Clase 93-94
 Obtener listado de N pokemons, e insertarlos uno por uno 
