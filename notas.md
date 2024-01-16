@@ -43,3 +43,5 @@ Preparar modulo de seed (Para poder tener datos iniciales)
 Obtener los datos de una api de terceros con axios
 # Clase 93-94
 Obtener listado de N pokemons, e insertarlos uno por uno 
+# Clase 95
+Crear insert into select en Mongo
