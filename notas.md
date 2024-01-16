@@ -45,3 +45,5 @@ Obtener los datos de una api de terceros con axios
 Obtener listado de N pokemons, e insertarlos uno por uno 
 # Clase 95
 Crear insert into select en Mongo
+# Clase 95
+Custom Provider de peticiones HTTP
