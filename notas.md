@@ -49,3 +49,5 @@ Crear insert into select en Mongo
 Custom Provider de peticiones HTTP
 # Clase 97
 Envio/recepcion de parametros
+# Clase 98
+Trasformamos los tipos de datos que recibimos de los parametros (Query parameters)  ("5" => 5, "True" => True) 
