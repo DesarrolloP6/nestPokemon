@@ -57,3 +57,5 @@ Configuracion de load proyecto, variables de entorno y app.config
 Configuracion final para variables de entorno
 # Clase 106
 Configuracion validaciones con el paquete Joi
+# Clase 107
+Remodelacion del readme para mejorar el inico del proyecto
