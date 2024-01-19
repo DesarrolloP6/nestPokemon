@@ -55,3 +55,5 @@ Trasformamos los tipos de datos que recibimos de los parametros (Query parameter
 Configuracion de load proyecto, variables de entorno y app.config
 # Clase 105
 Configuracion final para variables de entorno
+# Clase 106
+Configuracion validaciones con el paquete Joi
