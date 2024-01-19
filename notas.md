@@ -51,3 +51,7 @@ Custom Provider de peticiones HTTP
 Envio/recepcion de parametros
 # Clase 98
 Trasformamos los tipos de datos que recibimos de los parametros (Query parameters)  ("5" => 5, "True" => True) 
+# Clase 104
+Configuracion de load proyecto, variables de entorno y app.config
+# Clase 105
+Configuracion final para variables de entorno
