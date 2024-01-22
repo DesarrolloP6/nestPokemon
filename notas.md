@@ -59,3 +59,5 @@ Configuracion final para variables de entorno
 Configuracion validaciones con el paquete Joi
 # Clase 107
 Remodelacion del readme para mejorar el inico del proyecto
+# Clase 108
+Conexion a base de datos subida en RallWay, y configuracion en repositorio Git
